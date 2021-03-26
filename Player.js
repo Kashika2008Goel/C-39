@@ -17,7 +17,7 @@ class Player{
       }
 
   writePlayerInfo(){
-    var playerIndex= "Players/Player" + playerCount;
+    var playerIndex= "Players/Player" + this.index;
     db.ref(playerIndex).update({Name: this.n, Distance: this.distance});
 
   }
